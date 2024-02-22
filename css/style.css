@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 20px auto;
+  border: 2px dotted #ccc;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 200px;
+}
+
+#product-image {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.choice a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.choice a.active,
+.choice a:hover {
+  font-weight: bold;
+}
+
+span.circle {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border: 2px dotted #555;
+  border-radius: 50%;
+}
+
+.choice a.active span.circle {
+  border: 7px double #999;
+}
+
+.price {
+  font-size: 2.5em;
+  color: #f00;
+}
+
+.price::after {
+  content: " грн.";
+}
+
+#output {
+	color: #f00;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 20px;
+	line-height: 1.8;
+}
+table {
+	border: 2px solid #ddd;
+}
+td {
+	border: 2px solid #ddd;
+	padding: 6px;
+	text-align: center;
+	cursor: pointer;
+	width: 50px;
+}
+ul {
+	line-height: 1.8;
+}
